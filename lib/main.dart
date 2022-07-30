@@ -27,21 +27,26 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black12,
       appBar: AppBar(
+        toolbarHeight: 100.0,
         backgroundColor: Colors.green,
-        title: Text("Xylophone"),
+        title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [Text("Xylophone"), Text("Xylophone")]),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          CustomButton(Colors.green),
-          CustomButton(Colors.blue),
-          CustomButton(Colors.white),
-          CustomButton(Colors.yellow),
-          CustomButton(Colors.orange),
-          CustomButton(Colors.teal),
-          CustomButton(Colors.grey),
-          CustomButton(Colors.red),
-        ],
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            CustomButton(Colors.green),
+            CustomButton(Colors.blue),
+            CustomButton(Colors.white),
+            CustomButton(Colors.yellow),
+            CustomButton(Colors.orange),
+            CustomButton(Colors.teal),
+            CustomButton(Colors.grey),
+            CustomButton(Colors.red),
+          ],
+        ),
       ),
     );
   }
