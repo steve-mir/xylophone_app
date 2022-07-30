@@ -29,9 +29,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 100.0,
         backgroundColor: Colors.green,
-        title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [Text("Xylophone"), Text("Xylophone")]),
+        title: Text("Xylophone"),
       ),
       body: SafeArea(
         child: Column(
